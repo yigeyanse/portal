@@ -1,0 +1,563 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+.clearfix:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0}
+.clearfix{
+    zoom:1
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+	height: auto;
+	overflow: auto;
+    font-size: 16px;
+    font-family: "HP Simplified Light", "hpsimplified", "微软雅黑", "arial";
+    background-color: #fff;
+    color:#000;
+}
+
+.workMeetingNav{
+    width:96%;
+    margin:20px auto;
+}
+.workMeetingNav li{
+    float:left;
+}
+.workMeetingNav li:last-child{
+    float:right;
+}
+.meetingNavTop{
+	border-bottom: 3px solid #0096d6;
+}
+
+/*workMeetingContent*/
+.workMeetingContent{
+    width:auto;
+	height: auto;
+	border-radius: 4px;
+}
+
+.workMeetingContent .active{
+    color:#fff;
+    background-color: #0096d6;
+    font-size: 16px;  
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border: none;
+	width: 150px;
+	height: 42px;
+	text-align: center;
+	line-height: 43px;
+	cursor:pointer;
+}
+.workMeetingContent .meetingListBox .current{
+    display:block;
+}
+.workMeetingContent .meetingListBox li{
+    display:none;
+}
+.meetingNavSpan{
+    display: inline-block;
+    margin-top: 24px;
+	margin-left: 10px;
+	border: 1px solid #ccc;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom: none;
+	width: 150px;
+	height: 42px;
+	text-align: center;
+	line-height: 41px;	
+	cursor:pointer;
+}
+.meetingList_top{
+	width: auto;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.applicant div{
+    display:inline-block;
+	margin-bottom: 14px;
+	margin-right: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.applicant span{
+	font-size: 14px;
+	margin-right: 15px;
+	width: 80px;
+    text-align: right;
+    display: inline-block;
+}
+.applicant input{
+	height: 30px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 186px;
+}
+.objective{
+	 display:inline-block;
+	margin-bottom: 12px;
+	margin-right: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+.objective span{
+	font-size: 14px;
+	margin-right: 15px;
+	width: 80px;
+    text-align: right;
+    display: inline-block;
+}
+.objective input{
+	height: 30px;
+	width: 510px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.participant div{
+    display:inline-block;
+	margin-bottom: 12px;
+	margin-right: 40px;
+}
+.participant span{
+	font-size: 14px;
+	margin-right: 12px;
+	width: 80px;
+    text-align: right;
+    display: inline-block;
+}
+.participant input{
+	height: 30px;
+	width:140px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-left:4px;
+}
+.participant .participant-text{
+	margin: 16px!important;
+	width: 16px;
+}
+
+.user_select{
+	height: 30px;
+	width: 186px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #ccc;
+	padding-left: 5px;
+	padding-right: 5px;
+	cursor:pointer;
+}
+.tips i{
+ 	color: red!important;
+	margin-right:  6px;
+}
+ .tips span{
+	 color:#333;
+	 font-size: 14px;
+	 width: 80px;
+     text-align: right;
+     display: inline-block;
+}
+.tips p{
+    display:inline-block;
+	color: #333;
+	margin-left: 16px;
+	font-size: 14px;
+}
+.infoButton{
+	margin-top: 16px;
+}
+.infoButton button{
+    float: right;
+    margin-left: 20px;
+	height: 30px;
+	width: 88px;
+	text-align: center;
+	align-items: center;
+	line-height: 30px;
+	outline: none;
+	background-color: #0096d6;
+	border: none;
+	color: #fff;
+	border-radius: 60px;
+	font-size: 16px;
+}
+.infoButton button:hover{
+	background-color: #007DBA;
+}
+.infoButton i{
+	margin-right: 8px;
+	font-size: 16px;
+}
+.meetingButton{
+	margin-right: 20px;
+}
+.meetingButton button{
+    margin-left: 20px;
+    margin-top:20px;
+	 float: right;
+	height: 30px;
+	width: 88px;
+	text-align: center;
+	align-items: center;
+	line-height: 30px;
+	outline: none;
+	background-color: #0096d6;
+	border: none;
+	color: #fff;
+	border-radius: 60px;
+	font-size: 16px;
+}
+.meetingButton button:hover{
+	background-color: #007DBA;
+}
+.meetingButton i{
+	margin-right: 6px;
+	font-size: 16px;
+}
+
+.meetingListBox table{
+    width:100%;
+    margin:20px auto;
+	border-top: 1px solid #ccc;
+}
+.meetingListBox table tr{
+    width:100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.meetingListBox table tbody tr:hover{
+	background-color: rgba(0,150,214,0.1)
+
+}
+.meetingListBox table tr th{
+	margin-left: 10px;
+	padding-left: 16px;
+	border-bottom: 1px solid #ccc;
+	line-height: 40px;
+	text-align: center;
+}.meetingListBox table tr input{
+	width: 16px;
+	height: 16px;
+}
+.meetingListBox table tr td{
+	margin-left: 10px;
+	padding-left: 16px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.meetingListBox table tr td:last-child{
+	min-width: 80px;
+}
+
+.meetingListBox table tbody tr:nth-child(even) td{
+    background-color:#f7f7f7;
+}
+.meetingListBox table tbody tr:hover td{
+    background-color:rgba(0,150,214,0.2)
+}
+
+
+.meetNewAdd{
+	color: #0096d6;
+	margin-right: 20px;
+	cursor:pointer;
+	font-size: 16px;
+}
+.meetNewRemove{
+	color: #ffcd3a;
+	cursor:pointer;
+	font-size: 16px;
+}
+.meetingListBox input{
+	outline: none;
+	border: 1px solid #ccc;
+}
+.meetingListBox .checkbox-inline input {
+    border:none;
+}
+
+
+/*.addBox*/
+.addBox{
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display:none;
+}
+.addBox .conterBox{
+    width:600px;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-200px;
+    margin-left:-300px;
+    background-color:#fff;
+	border-radius: 4px;
+}
+
+
+.col-md-4 {
+    width: 176px;
+	display: inline-block;
+	padding-right: 0px;
+}
+.workNewButton button{
+    float:right;
+    margin-left:10px;
+}
+.conterBox .conterTop{
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+    width:100%;	
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.conterBox .conterTop i{
+    margin-right: 10px;
+	color: #0096d6;
+}
+.addboxClose{
+	height: 50px;
+	width: 40px;
+	float: right;
+	text-align: center;
+	cursor:pointer;
+}
+.addboxClose i{
+	float: right;
+	color: #666!important;
+}
+.conterBox .conterInfo{
+    width:94%;
+    margin:0 auto;
+	background-color: #f7f7f7;
+	font-size:14px;
+	border-radius: 4px;
+	padding: 20px 15px;
+	margin-bottom: 15px;
+}
+
+
+/*.container*/
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.container {
+	width: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+    display: inline-block;
+	float: left;
+}
+.reportStart, .reportEndt {
+    float: left;
+    height: 26px;
+    line-height: 34px;
+    font-size: 14px;
+	width: 80px;
+	text-align: right;
+	display: inline-block;
+}
+.form-group {
+     margin-bottom: 0px; 
+}
+
+.input-group {
+    position: relative;
+    display: table;
+	border-collapse: separate;
+}
+#datetimepicker1{
+	outline: none;	
+	padding-left: 6px;
+	font-size: 14px;
+	height: 30px;
+	width: 160px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px!important;
+}
+
+
+.form-control{
+	outline: none;	
+	padding-left: 6px;
+	font-size: 14px;
+	height: 30px;
+	width: 160px;
+	line-height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px!important;
+	background-color:#fff;
+	border-bottom-right-radius: 0px!important;
+	border-top-right-radius: 0px!important;
+}
+
+.Startgroup1{
+	float: left;
+}
+.Startgroup2{
+	float: right;
+}
+
+.input-group-addon {
+    padding: 0px 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-group-addon i{
+    font-size: 20px;
+    color: #0096d6;
+}
+.meetingSeance{
+	float: left;
+	margin-bottom: 24px;
+	display: inline-block;
+}
+.meetingSeance span{
+	margin-right:  14px;
+	width: 80px;
+	text-align: right;
+	display: inline-block;
+}
+.meetingSeance .meetingSeance-icon{
+	width: 16px;
+}
+
+#conferenceRoom{
+	height: 30px;
+	padding-left: 5px;
+	padding-right: 8px;
+	outline: none;
+	border-radius: 4px;
+	border:1px solid #ccc;
+}
+
+.meetingSeance span i{
+	font-size: 22px;
+    margin-left: 10px;
+    vertical-align: middle;
+	color: #0096d6;
+}
+.numberlimit{
+	float: right;
+}
+#numberPeople{
+	margin-left: 16px;
+	height: 30px;
+	width: 160px;
+	line-height: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;	
+}
+.workNewButton{
+	margin-top: 30px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 10px
+}
+.workNewButton button{
+	outline: none;
+	height: 30px;
+	width: 88px;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	background-color: #0096d6;
+	border: none;
+	color: #fff;
+	border-radius: 80px;
+	margin-left: 24px;
+}
+.workNewButton button:hover{
+	background-color: #007dba;
+}
+.addButtonClose{
+	outline: none;
+	background-color: #767676!important;
+}
+
+.addButtonClose:hover{
+	outline: none;
+	background-color: #5a5a5a!important;
+}
+
+
+
+.meetingButton .fe-trash-2,.meetingButton .fe-file-plus{
+	color:#fff;
+}
+.container .form-group .input-group input{
+	width:100% !important;
+}
+.meetNewRemove .fe-trash-2{
+    color:#FDCB31;
+}
+.meetNewAdd .fe-edit{
+	color:#0096d6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

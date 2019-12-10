@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+.clearfix:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0}
+.clearfix{
+    zoom:1;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    font-size: 16px;
+    font-family: "HP Simplified Light", "hpsimplified", "微软雅黑", "arial";
+    background-color: #fff;
+    color:#000;
+	margin-top: 10px;
+}
+.infoDiffNavButton{
+    height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	padding-right: 30px;
+}
+.infoDiffNavButton button{
+    float:right;
+	height: 30px;
+	width: 88px;
+	line-height: 30px;
+	text-align: center;
+	outline: none;
+	vertical-align: middle;
+	border: none;
+	background-color: #0096d6;
+	color: #fff;
+	margin-right: 1px;
+	font-size: 14px;
+}
+.infoDiffNavButton button:hover{
+	background-color: #007dba;
+	cursor: pointer;	
+}
+.infoDiffNavButton button i{
+    font-size: 16px;
+	padding-right: 5px
+}
+.infoDiffNavButton-sql{
+	border-radius: 100px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.infoDiffNavButton-excel{
+	border-radius: 100px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+.infoDiffListBox{
+	border: 1px solid #ccc;
+	border-left: none;
+	border-right: none;
+}
+.infoDiffListBox table{
+    width:100%;
+    text-align: center;
+}
+table{
+	border-spacing: 0;
+	border-collapse: collapse;	}
+.infoDiffListBox tr th{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+.infoDiffListBox tr td{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.infoDiffListBox table tbody tr:nth-child(even) td{
+    background-color:#f7f7f7;
+}
+.infoDiffListBox table tbody tr:hover td{
+    background-color:rgba(0,150,214,0.2)
+}
+
+.infoDiffBottomBox{
+    margin:15px auto;
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+}
+.infoDiffBottomText{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	vertical-align: middle;
+	padding-left: 24px;	
+}
+.infoDiffBottomText .infoDiffTextList input{
+	height: 30px;
+	width: 608px;
+	line-height: 30px;
+	padding-left: 6px;
+	margin-left: 20px;
+	border-radius: 4px;
+	outline: none;
+	padding-right: 6px;
+	border: 1px solid #ccc;
+}
+
+.infoDiffBottomText .infoDegreeBox{
+	margin-left: 40px;
+}
+.infoDegreeTextBox{
+	border: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+	width: 94px;
+	margin-left: 15px;
+	border-radius: 4px;
+}
+.infoDegreeTextBox-icon{
+	border: 1px solid #ccc;
+    height: 30px;
+	width: 30px;
+    line-height: 30px;
+	border-bottom: none;
+	border-top: none;
+	border-right: none;
+	text-align: center;
+	display: inline-block;
+	float: right;
+	cursor: pointer;	
+}
+.infoDegreeTextBox-icon i{
+	font-size: 26px;
+	color: #666;
+}
+.infoDiffBottomBox .infoDiffTextList{
+    display:inline-block;
+}
+.infoDiffBottomBox .infoDegreeTextBox{
+    display:inline-block;
+}
+.infoDegreeListText{
+    height:30px;
+    width:56px;
+	padding-left: 6px;
+}
+.infoDiffBottomBox .infoDegreeTextBox .infoDegreeListText{
+    display:inline-block;
+  
+}
+ .infoDegreeList{
+	width: 63px!important;
+	margin-left: 20px!important;
+	margin-top: 6px;
+	float: left;
+	margin-right: 31px;
+	background-color: #fff;
+}
+ .infoDegreeList li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 6px;
+}
+ .infoDegreeList li:hover{
+	background-color: rgba(0,150,214,0.1)
+}
+.infoDiffBottomBox .infoDegreeBox{
+    display:inline-block;
+    position: relative;
+}
+.infoDiffBottomBox .infoDegreeBox .infoDegreeList{
+    display:none;
+    width:94px!important;
+	margin-right: 0px;
+    position: absolute;
+    top:30px;
+	right: 0;
+	border-radius: 4px;
+    border:1px solid #ccc;
+}
+.infoDiffBottomConter .infoConterTextarea{
+    vertical-align: text-top;
+}
+
+.infoDiffEnclosure table{
+    width:100%;
+    text-align:left;
+}
+.infoDiffBottomConter{
+	margin-top: 20px;
+	padding-left: 24px;
+}
+.infoDiffBottomConter textarea{
+	margin-left: 16px;	
+	width: 92%;
+	min-height: 400px; 
+	padding: 6px;
+	outline: none;
+	line-height: 24px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;	
+	resize: none;	
+}
+
+.infoDiffEnclosure{
+	padding-left: 24px;
+	border: 1px solid #ccc;
+	margin-top: 15px;
+	padding-right: 20px;
+	border-left: none;
+	border-right: none;
+}
+
+.infoDiffEnclosure span{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+}
+.infoDiffEnclosure table{
+	border: 1px solid #ccc;
+}
+
+.infoDiffEnclosure th{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	border-bottom:1px solid #ccc;
+}
+.infoDiffEnclosure th input{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+
+.infoDiffEnclosure td{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+
+}
+.infoDiffEnclosure td input{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+.infoDiffEnclosure  table tbody tr:nth-child(even) td{
+    background-color:#f7f7f7;
+}
+.infoDiffEnclosure  table tbody tr:hover td{
+    background-color:rgba(0,150,214,0.2)
+}
+.enclosureDelete i{
+	color: #FDCB31;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.enclosureUpload{
+	margin-left:30px;
+}
+.enclosureUpload button{
+	height: 30px;
+	width: 88px;
+	line-height: 30px;
+	text-align: center;
+	margin:20px 10px;
+	outline: none;
+	border:none;
+	background-color: #0096d6;
+	color: #fff;
+	font-size: 14px;
+	border-radius: 60px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.enclosureUpload button:hover{
+	background-color: #007dba;
+}
+.enclosureUpload i{
+	margin-right: 5px;
+	font-size: 16px;
+}
+.enclosure-Delete i{
+	font-size:14px!important;
+	margin-right: 5px;
+}
+.enclosure-Delete{
+	background-color: #767676!important;
+}
+.enclosure-Delete:hover{
+	background-color: #5a5a5a!important;
+}
+
+
+
+.enclosure-Delete .fe-trash-2{
+	color:#fff;
+}
+.fe-plus-square, .fe-trash-2, .fe-arrow-up, .fe-arrow-down, .fe-file-plus, .fe-check-circle, .fe-download{
+	color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

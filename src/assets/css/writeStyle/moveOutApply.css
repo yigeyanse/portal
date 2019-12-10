@@ -1,0 +1,712 @@
+*{
+    margin:0;
+    padding:0;
+}
+ul,li{
+    list-style:none;
+}
+.clearfix:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0}
+.clearfix{
+    zoom:1
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p{margin: 0px;}
+
+body{
+    font-size: 16px;
+    font-family: "HP Simplified Light", "hpsimplified", "微软雅黑", "arial";
+    background-color: #fff;
+    color:#000;
+}
+.moveOutApplyContent{
+	margin-top: 20px;
+}
+.moveOutNavTop{
+	height: 44px;
+	line-height: 44px;
+	border-bottom: 3px solid #0096d6;
+}
+.moveOutNavSpan .active {	
+	color: #fff;
+    background-color: #0096d6;
+    font-size: 16px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: none!important;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+.moveOutNavSpan {
+    text-align: center;
+    line-height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+	border-bottom: none;
+	cursor: pointer;
+}
+.moveOutListBox .moveOutList{
+    display:none;
+}
+.moveOutNavTop .moveOutNavSpan.active{
+    background-color:#0096d6;
+    color:#fff;
+}
+.moveOutListBox .moveOutList.current{
+	display:block;
+	min-width: 1200px;
+}
+.moveOutInfoBox{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+}
+.moveOutInfoBox .moveOutInfoBranch .moveOutBranchList{
+    float:left;
+}
+.moveOutInfoBranch{
+	margin-top: 20px;
+}
+.moveOutInfoSort {
+	margin-top: 20px;
+}
+
+.moveOutBranchList{
+	font-size: 14px;
+	padding-left: 30px;
+	margin-right: 8px;
+}
+.moveOutBranchList input{
+	font-size: 14px;
+	height: 32px;
+	width: 140px;
+	line-height: 32px;
+	padding-left: 6px;
+	margin-left: 16px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	color: #999;
+}
+.moveOutBranchList-input{
+	font-size: 14px;
+	height: 32px;
+	width: 220px!important;
+	line-height: 32px;
+	padding-left: 6px;
+	margin-left: 16px;
+	outline: none;
+	border: 1px solid #ccc;
+}
+.moveOutInfoBox .moveOutInfoSort .moveOutSortList .moveOutUnitList2{
+    float:left;
+    margin-right:20px;
+    margin-top:20px;
+}
+.moveOutInfoBox .moveOutInfoUnit .moveOutUnitList .moveOutUnitList2{
+    float:left;
+    margin-right:20px;
+    margin-top:20px;
+}
+.moveOutSortList{
+	padding-left: 20px;
+	font-size: 14px;
+	display: inline-block;
+	float: left;
+}
+.red{
+	color:red;
+	margin-right: 5px;
+}
+.moveOutInfoRemarks textarea{
+    vertical-align: text-top;
+}
+.moveOutMiddleInfo{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+.moveOutMiddleInfo .moveOutMiddleInfoName{
+	margin-left: 20px;
+	font-size: 14px;
+}
+.moveOutMiddleInfoButton{
+	padding-right: 24px;
+}
+.moveOutMiddleInfoButton button{
+	height: 30px;
+	width: 88px;
+	line-height: 30px;
+	text-align: center;
+	border: none;
+	background-color: #0096d6;
+	color: #fff;
+	
+}
+.moveOutMiddleInfoButton button i{
+	font-size: 14px;
+	margin-right: 5px;
+	color: #fff;
+}
+.moveOutMiddleInfoButton-new{
+	border-radius: 60px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.moveOutMiddleInfoButton-upload{
+	border-radius: 60px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+.moveOutSortList select{
+	height: 32px;
+	width: 300px;
+	margin-left: 16px;
+	padding-left: 6px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+.moveOutSortList option{
+	height: 32px;
+	width: 343px;
+	padding-left: 6px;
+}
+.moveOutSortList2{
+	display: inline-block;
+	margin-left: 28px;
+	float: left;
+	font-size: 14px;
+}
+.moveOutSortList2 select{
+	height: 31px;
+	width: 220px;
+	margin-left: 15px;
+	padding-left: 6px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+.moveOutSortList3{
+	display: inline-block;
+	margin-left: 42px;
+	float: left;
+	font-size: 14px;
+}
+.moveOutSortList3 input{
+	height: 32px;
+	width: 220px;
+	margin-left: 16px;
+	padding-left: 6px;
+	outline: none;
+	border-radius: 4px;
+	padding-right: 6px;
+	border: 1px solid #ccc;
+}
+
+.moveOutInfoUnit {
+	margin-top:20px;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+.moveOutInfoUnit .moveOutUnitList{
+	display: inline-block;	
+	margin-right: 26px;
+}
+.moveOutInfoUnit .moveOutUnitList select{
+	height: 32px;
+	width: 300px;
+	margin-left: 16px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding-left: 6px;
+}
+.moveOutInfoUnit .moveOutUnitList input{
+	height: 32px;
+	width: 220px;
+	margin-left: 16px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding-left: 6px;
+	padding-right: 6px;
+}
+.moveOutInfoRemarks{
+	font-size: 14px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.moveOutInfoRemarks textarea{
+	font-size: 14px;
+	margin-left: 16px;
+	max-width: 1320px;
+	min-width: 980px;
+	padding:6px;
+	min-height: 60px;
+	max-height: 300px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	resize: none;
+}
+.moveOutMiddleInfo .moveOutMiddleInfoName{
+    float:left;
+}
+.moveOutMiddleInfo .moveOutMiddleInfoButton{
+    float:right;
+}
+
+.moveOutInfoBoxButton{
+	margin-top: 20px;
+}
+.moveOutInfoBoxButton button{
+	background-color: #0096d6;
+	height: 30px;
+	width: 88px;
+	border: none;
+	text-align: center;
+	color: #fff;
+	line-height: 30px;
+	font-size: 14px;
+	border-radius: 60px;
+	float: right;
+	margin-right: 24px;
+}
+.moveOutInfoBoxButton button i{
+	margin-right: 5px;
+}
+.moveOutTableBox .moveOutTableList{
+    width:100%;
+    text-align: center;
+}
+.moveOutTableList th{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	font-size: 14px;
+}
+.moveOutTableList td{
+	height: 40px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 14px;
+	min-width: 100px;
+	max-width: 300px;
+	padding: 6px;
+	overflow: hidden;  
+	text-overflow: ellipsis;  
+}
+.moveOutTableBox .moveOutTableList th{
+    text-align: center;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.moveOutTableBox .moveOutTableList tbody tr:nth-child(even) td{
+    background-color:#f7f7f7;
+}
+.moveOutTableBox .moveOutTableList tbody tr:hover td{
+    background-color:rgba(0,150,214,0.2)
+/*    color:#fff;*/
+}
+
+.moveOutAnnexBox{
+    margin:0px auto;
+	border-bottom: 1px solid #ccc;
+}
+.moveOutAnnexBox .moveOutAnnexList{
+    width:100%;
+}
+.moveOutAnnexBox .moveOutAnnexList tbody tr:nth-child(even) td{
+    background-color: #f7f7f7;
+}
+.moveOutAnnexBox .moveOutAnnexList tbody tr:hover td{
+    background-color:rgba(0,150,214,0.2)
+/*    color:#fff;*/
+}
+.checkbox
+/*
+.moveOutAnnexBox .moveOutAnnexList tbody tr:hover .moveOutAnnexRemove i{
+    color:#fff;
+}
+.moveOutAnnexBox .moveOutAnnexList tbody tr:hover .checkbox-inline input{
+    color:#fff;
+}
+*/
+
+.checkbox-inline {
+    line-height: 25px;
+    text-align: center !important;
+    height: 25px;
+}
+
+.checkbox-inline, .radio-inline {
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.checkbox-inline input {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    position: relative;
+    overflow: visible;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    outline: none !important;
+    vertical-align: middle;
+	margin-left: 10px;
+}
+
+.moveOutAdd {
+	margin-right: 24px;
+}
+.moveOutAdd i{
+	color: #0096d6;
+	font-size: 16px;
+    cursor: pointer;
+}
+.moveOutRemove i{
+	color: #FDCB31;
+    cursor: pointer;
+	font-size: 16px;
+}  
+.moveOutAnnexBox-top{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	padding-left: 15px;
+	border-bottom: 1px solid #ccc;
+}
+.moveOutAnnexBox-top i{
+	margin-right: 5px;
+}
+.moveOutAnnexList th{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.moveOutAnnexList td{
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	text-align: center;
+}
+.moveOutAnnexRemove i{
+	color: #FDCB31;
+    cursor: pointer;
+	font-size: 16px;
+}
+.moveOutAnnexButton button{
+	height: 30px;
+	width: 88px;
+	line-height: 30px;
+	outline: none;
+	border:none;
+	background-color: #0096d6;
+	color: #fff!important;
+	font-size: 14px;
+	border-radius: 60px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.moveOutAnnexButton button:hover{
+	background-color: #007dba;
+}
+.moveOutAnnexButton-upload i{
+	margin-right: 5px;
+	font-size: 16px;
+}
+.fe-trash-2{
+	color: #fff;
+}
+.moveOutAnnexButton-delete i{
+	font-size:14px!important;
+	margin-right: 5px;
+}
+.moveOutAnnexButton-delete{
+	background-color: #767676!important;
+}
+.moveOutAnnexButton-delete:hover{
+	background-color: #5a5a5a!important;
+}
+.moveOutAnnexButton{
+	margin: 0px;
+	padding-left: 40px;
+}
+
+
+/* 弹出编辑列表框 */
+.moveOutAlert{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.moveOutAlert .moveAlertBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 640px;
+    height: auto;
+	padding-bottom: 14px;
+    margin-top: -190px;
+    margin-left: -320px;
+    background-color: #fff;
+	border-radius: 4px;
+}
+.moveOutAlertTopNav {
+	height: 40px;
+	line-height: 39px;
+	padding-left: 20px;
+}
+.moveOutAlert .moveOutAlertTopNav p{
+    float:left;
+}
+.moveOutAlertTopNav p span{
+	font-size: 14px;
+}
+.moveOutAlertTopNav p i{
+	font-size: 14px;
+	margin-right: 6px;
+}
+.moveOutAlertTopClose{
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+.moveOutAlertTopClose i{
+	font-size: 16px;
+	cursor: pointer;
+}
+.moveOutAlert .moveOutAlertTopNav .moveOutAlertTopClose{
+    float:right;
+}
+.moveOutAlert .moveOutAlertGoods .AlertGoodsInfo div{
+    display:inline-block;
+}
+.moveOutAlert .moveOutAlertGoods .AlertGoodsNum div{
+    display:inline-block;
+}
+.moveOutAlert .moveOutAlertGoods .AlertGoodsTime .AlertGoodsList{
+    display:inline-block;
+}
+.moveOutAlertGoods{
+	background-color: #f7f7f7;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 4px;
+	padding-top: 16px;
+	padding-left: 15px;
+}
+.AlertGoodsInfo {
+	height: 40px;
+	line-height: 40px;
+}
+.AlertGoodsInfo span{
+	font-size: 14px;
+	width: 90px;
+	margin-left: 5px;
+}
+.AlertGoodsInfo input{
+	font-size: 14px;
+	height: 32px;
+	margin-left: 10px;
+	padding-left: 5px;
+	width: 180px;
+	outline: none;
+	border-radius: 4px;
+	padding-right: 6px;
+	border: 1px solid #ccc;
+}
+.AlertGoodsNum {
+	height: 40px;
+	line-height: 40px;
+	margin-top: 16px;
+}
+.AlertGoodsNum span{
+	font-size: 14px;
+	width:90px;
+	text-align: right;
+	display: inline-block;
+}
+.AlertGoodsNum .moveOutAlertNum{
+	font-size: 14px;
+	height: 32px;
+	margin-left: 8px;
+	padding-left: 5px;
+	width: 120px;
+	outline: none;
+	border-radius: 4px;
+	padding-right: 6px;
+	border: 1px solid #ccc;
+}
+.AlertGoodsNum  .moveOutAlertUnit{
+	height: 31px;
+	line-height: 32px;
+	width: 56px;
+	font-size: 14px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+.AlertGoodsNum .moveOutAlertSerialNum{
+	font-size: 14px;
+	height: 32px;
+	margin-left: 10px;
+	padding-left: 5px;
+	width: 180px;
+	outline: none;
+	border-radius: 4px;
+	padding-right: 6px;
+	border: 1px solid #ccc;
+}
+.AlertGoodsTime {
+	margin-top: 16px;
+}
+.AlertGoodsList .radio-inline{
+	margin-left: 15px;
+}
+.AlertGoodsList>span{
+	font-size: 14px;
+	width:90px;
+	text-align: right;
+	display: inline-block;
+}
+.AlertGoodsList .container>span{
+	font-size: 14px;
+	width:90px;
+	text-align: right;
+	display: inline-block;
+}
+.form-group .input-group input {
+	font-size: 14px;
+	height: 32px;
+	line-height: 32px;
+	vertical-align: middle;
+	margin-left: 8px;
+	padding-left: 5px;
+	width: 180px!important;
+	outline: none;
+	padding-right: 6px;
+	border-radius: 4px!important;
+	border: 1px solid #ccc;
+}
+.container{
+	line-height: 30px;
+    width:300px;
+	margin-right: 0px!important;
+	margin-left: 66px;
+	margin-bottom: 0px;
+}
+
+.container .col-md-4{
+    display: inline-block;
+    float:none;
+    width:170px;
+    padding: 0;
+    margin: 0;
+}
+.AlertGoodsReason{
+	vertical-align: text-top;
+	margin-top: 16px;
+}
+.AlertGoodsReason textarea{
+	vertical-align: text-top;
+	width: 460px;
+	outline: none;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 6px;
+	margin-left: 10px;
+	resize: none;
+}
+
+.AlertGoodsButton button{
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	outline: none;
+	border: none;
+	height: 30px;
+	width: 88px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 60px;
+	background-color: #0096d6;
+	color: #fff;
+	font-size: 14px;
+}
+.AlertGoodsButton button:hover{
+	background-color: #007dba;
+}
+#moveOutAlertClose{
+	background-color: #767676!important;
+}
+#moveOutAlertClose:hover{
+	background-color: #5a5a5a!important;
+}
+.dropdown-menu{
+	padding:0;
+}
+.bootstrap-datetimepicker-widget td span{
+    background-color:#e1e1e1;
+}
+.bootstrap-datetimepicker-widget td span.timepicker-hour,.bootstrap-datetimepicker-widget td span.timepicker-minute,.bootstrap-datetimepicker-widget td .btn span{
+    background-color:#fff;
+}
+#moveoutIcon{
+	color:#0096d6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

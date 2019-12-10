@@ -1,0 +1,441 @@
+.table-condensed>thead>tr>th,
+.table-condensed>tbody>tr>th,
+.table-condensed>tfoot>tr>th,
+.table-condensed>thead>tr>td,
+.table-condensed>tbody>tr>td,
+.table-condensed>tfoot>tr>td {
+	text-align: center;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table{
+	margin-bottom: 0;
+	table-layout: fixed;
+}
+.table>thead>tr>th{
+	padding: 15px 0;
+}
+.panel-body .table .active .pull-left .fe-plus-square,.panel-body .table .active .pull-left .fe-minus-square{
+	cursor: pointer;
+	color: #666666;
+}
+button{
+	outline: none !important;
+}
+.vuetable button,.treetable-table button{
+	padding: 0 12px;
+	border: none;
+}
+.vuetable button[disabled] i,button[disabled] i{
+	color: #999
+}
+button[disabled]{
+	background: #CCCCCC;
+	color: #999999;
+}
+button[disabled]:hover{
+	background: #CCCCCC !important;
+	color: #999999;
+}
+.vuetable button[disabled]:hover{
+	background: transparent !important;
+	color: #999999;
+}
+.breadcrumb>li+li:before {
+    content: none;
+    padding: 0 5px;
+    color: #ccc;
+}
+.fe-disc{
+	line-height: 40px;
+	color: #0096D6;
+	float: left;
+	margin-right: 3px;
+}
+.page-title{
+	margin: 0;
+	line-height: 40px;
+	font-size: 12px;
+}
+.breadcrumb{
+	margin: 0;
+	padding: 0;
+	line-height: 40px;
+	background: transparent;
+}
+.breadcrumb li{
+	position: relative;
+	padding-right: 10px;
+}
+.breadcrumb li a{
+	color: #0096D6;
+}
+.page-title:before {
+    content: "\e861";
+    font-family: feather!important;
+    color: #0096D6;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.breadcrumb li:after{
+	content: ">";
+	position: absolute;
+	right: 0;
+}
+.breadcrumb li:last-child:after{
+	content: "";
+	width: 4px;
+	height: 15px;
+	background: #0096d6;
+	top: 12.5px;
+	border-radius: 10px;
+}
+/*分页自定义样式*/
+.pagination{
+	margin: 0;
+	display: initial;
+}
+.pagination a {
+	color: #767676 !important;
+    padding: 0 5px !important;
+    font-weight: 600;
+    border-radius: 0px;
+    background: #ffffff;
+    box-shadow: none;
+    min-height: 21px;
+    min-width: 23px;
+    line-height: 21px !important;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+.pagination a:hover,.pagination li:active,.pagination li a:active{
+	background: #FFFFFF !important;
+	color: #0096D6 !important;
+}
+.pagination .active a{
+	color: #FFFFFF !important;
+	background: #0096D6 !important;
+}
+.pagination .active{
+	color: #FFFFFF !important;
+	background: #0096D6 !important;
+}
+.pagination .active a:hover{
+	color: #FFFFFF !important;
+	background: #0096D6 !important;
+}
+.input-search{
+	border: 1px solid #0096D6;
+	border-radius: 20px;
+}
+.input-search input{
+	border: none;
+	box-shadow: none !important;
+	outline: none;
+	height: 21px;
+	border-radius: 20px;
+	padding: 0 6px;
+	position: relative !important;
+	z-index: 1 !important;
+}
+.search-btn button{
+	height: 19px;
+	border-radius: 20px !important;
+	padding: 0px 12px !important;
+	margin-top: 0.2px;
+	position: relative;
+	z-index: 2;
+	margin-right: 1px;
+}
+.pagination .disabled a{
+    pointer-events: none;
+    background: #f2f2f2;
+    color: #ccc !important;
+}
+.form-group .input-group input{
+	width: 40px !important;
+    padding: 6px;
+}
+.input-group-btn button{
+	padding: 2px 6px ;
+    border-radius: 0px 4px 4px 0 ;
+}
+/*操作栏按钮颜色*/
+.fe-edit {
+	color: #FDCB31;
+	cursor: pointer;
+}
+.fe-plus-square,.fe-trash-2,.fe-arrow-up,.fe-arrow-down,.fe-file-plus,.fe-check-circle,.fe-download {
+	color: #0096D6;
+	cursor: pointer;
+}
+/*修改页面下拉框样式*/
+.page_treeselect .vue-treeselect__control{
+	height: 23px;
+	border: 1px solid transparent;
+	background: #0096D6;
+	border-radius: 12px;
+}
+.page_treeselect .vue-treeselect__placeholder{
+	color: #FFFFFF;
+}
+.page_treeselect .vue-treeselect__single-value{
+	color: #FFFFFF !important;
+}
+.page_treeselect .vue-treeselect__placeholder{
+	line-height: 23px;
+}
+.page_treeselect .vue-treeselect__single-value{
+	line-height: 23px;
+}
+.page_treeselect .vue-treeselect--open .vue-treeselect__control {
+  border-color: transparent;
+}
+.page_treeselect .vue-treeselect--focused.vue-treeselect--searchable .vue-treeselect__single-value {
+  color: #FFFFFF !important;
+}
+.page_treeselect .vue-treeselect__control-arrow{
+	color: #FFFFFF;
+}
+.page_treeselect .vue-treeselect:not(.vue-treeselect--disabled) .vue-treeselect__control-arrow-container:hover .vue-treeselect__control-arrow{
+	color: #FFFFFF;
+}
+.page_treeselect .vue-treeselect__x-container{
+	color: #FFFFFF;
+}
+.page_treeselect .vue-treeselect__x-container:hover {
+  	color: #FFFFFF;
+}
+.page_treeselect .vue-treeselect__option--highlight {
+	background: #FFFFFF;
+  	color: #0096D6;
+}
+.page_treeselect .vue-treeselect--single .vue-treeselect__option--selected {
+  	background: transparent;
+  	font-weight: 600;
+}
+.page_treeselect .vue-treeselect--single .vue-treeselect__option--selected:hover {
+  	background: transparent;
+}
+/*弹框下拉框样式*/
+.vue-treeselect__control{
+	height: 23px;
+	border: 1px solid #CCCCCC;
+}
+.vue-treeselect__placeholder{
+	line-height: 23px;
+}
+.vue-treeselect__single-value{
+	line-height: 23px;
+}
+.vue-treeselect--searchable .vue-treeselect__input-container{
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.vue-treeselect__option--highlight {
+	background: #FFFFFF;
+  	color: #0096D6;
+}
+.vue-treeselect--single .vue-treeselect__option--selected {
+  	background: transparent;
+  	font-weight: 600;
+}
+.vue-treeselect--single .vue-treeselect__option--selected:hover {
+  	background: transparent;
+}
+.vue-treeselect__control-arrow{
+	color: #666;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+}
+.vue-treeselect:not(.vue-treeselect--disabled) .vue-treeselect__control-arrow-container:hover .vue-treeselect__control-arrow{
+	color: #666;
+}
+.vue-treeselect__x-container{
+	color: #666;
+	position: absolute;
+	right: 20px;
+	top: 7px;
+}
+.vue-treeselect__x-container:hover {
+  	color: #666;
+}
+.vue-treeselect--focused.vue-treeselect--searchable .vue-treeselect__single-value {
+  color: #666;
+}
+/*弹框单选按钮自定义样式*/
+.radio-inline {
+	line-height: 25px;
+	text-align: center !important;
+}
+
+.radio-inline input {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	position: relative;
+	overflow: visible;
+	border: 0;
+	background: none;
+	-webkit-appearance: none;
+	outline: none !important;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.radio-inline input:before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	/* box-shadow: 0px 0px 3px #333; */
+	border-radius: 50%;
+	background-clip: padding-box;
+	position: absolute;
+	left: 0px;
+	top: 3px;
+	border: 1px solid #ccc;
+}
+
+.radio-inline input:checked:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #0096d7;
+	border-radius: 50%;
+	position: absolute;
+	left: 2px;
+	top: 5px;
+}
+/*弹框外框自定义样式*/
+.modal-title{
+	color: #0096D6;
+}
+.modal_body{
+	margin: 0 15px;
+	background: #F7F7F7;
+	border-radius: 5px;
+	padding: 15px;
+}
+.modal_contect_body{
+	margin: 0 15px;
+	border-radius: 5px;
+}
+.modal_contect_body table tr td,.modal-body .table-bordered tr td,.modal_body table tr td{
+	padding: 0;
+}
+.modal_contect_body table tr td select,.modal-body .table-bordered tr td select,.modal_body table tr td select{
+	border: none;
+	box-shadow: none;
+}
+.modal_contect_body table tr td input,.modal-body .table-bordered tr td input,.modal_body table tr td input{
+	border: none;
+	box-shadow: none;
+}
+.modal_contect_body .modal_body{
+	margin: 0;
+}
+.layui-layer-page .layui-layer-content{
+	font-size: 12px !important;
+}
+.modal-footer{
+	text-align: center;
+}
+.btn-default{
+	color: #FFFFFF;
+}
+/*弹框表格标题*/
+.table_title_caption{
+	position: relative;
+	text-indent: 5px;
+}
+.table_title_caption:before{
+	content: "";
+	width: 2px;
+	height: 14px;
+	position: absolute;
+	background: #0096D6;
+	left: 0px;
+    border-radius: 10px;
+}
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+ @-ms-viewport {
+	width: device-width;
+  }
+  @-o-viewport {
+	width: device-width;
+  }
+  @viewport {
+	width: device-width;
+	}
+	
+
+
+
+/*复选框自定义样式*/
+.checkbox-inline {
+	line-height: 25px;
+	text-align: center !important;
+	height: 20px;
+}
+
+.checkbox-inline input {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	position: relative;
+	overflow: visible;
+	border: 0;
+	background: none;
+	-webkit-appearance: none;
+	outline: none !important;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.checkbox-inline input:before {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	/* box-shadow: 0px 0px 3px #333; */
+	background-clip: padding-box;
+	position: absolute;
+	left: 0px;
+	top: 0;
+	border: 1px solid #ccc;
+}
+
+.checkbox-inline input:checked:after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: #0096d7;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+
+.checkbox2 input:checked:after {
+	content: '✔';
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: #0096d7;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: #fff;
+	line-height: 15px;
+	text-align: center;
+} 
